@@ -456,3 +456,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Workaround for audio glitches
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.adm.buffering.ms=3
+
+# These modules won't sanitize correctly with newer clang.
+$(call add-product-sanitizer-module-config,fec,never)
+$(call add-product-sanitizer-module-config,libfec_host,never)
