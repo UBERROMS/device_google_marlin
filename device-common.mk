@@ -18,11 +18,6 @@
 #
 # Everything in this directory will become public
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/google/marlin-kernel/Image.gz-dtb
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
 
 PRODUCT_SHIPPING_API_LEVEL := 24
 
