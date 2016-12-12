@@ -21,9 +21,6 @@
 
 PRODUCT_SHIPPING_API_LEVEL := 24
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
-
 DEVICE_PACKAGE_OVERLAYS += device/google/marlin/overlay
 
 # Input device files
