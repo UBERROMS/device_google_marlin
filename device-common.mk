@@ -487,3 +487,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.det_timeout=2500 \
     ro.facelock.rec_timeout=3500 \
     ro.facelock.est_max_time=600
+
+
+# ADB Config
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0
