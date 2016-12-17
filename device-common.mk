@@ -467,3 +467,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call add-product-sanitizer-module-config,fec,never)
 $(call add-product-sanitizer-module-config,libfec_rs_host,never)
 $(call add-product-sanitizer-module-config,libfec_host,never)
+
+# fingerprint sensor type
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.fingerprint=fpc
+
