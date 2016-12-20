@@ -837,7 +837,7 @@ PRODUCT_COPY_FILES += \
 #TODO: move to device.mk
 # dm-verity definitions
 #PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
-#$(call inherit-product, build/target/product/verity.mk)
+$(call inherit-product, build/target/product/verity.mk)
 
 #skip boot jars check
 SKIP_BOOT_JARS_CHECK := true
