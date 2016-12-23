@@ -29,10 +29,9 @@ PRODUCT_DEVICE := sailfish
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := AOSP on msm8996
 PRODUCT_MANUFACTURER := google
-PRODUCT_RESTRICT_VENDOR_FILES := true
 
-$(call inherit-product, device/google/marlin/device-sailfish.mk)
-$(call inherit-product-if-exists, vendor/google_devices/marlin/device-vendor-sailfish.mk)
+$(call inherit-product, device/google/sailfish/device-sailfish.mk)
+$(call inherit-product-if-exists, vendor/google/sailfish/device-vendor-sailfish.mk)
 
 PRODUCT_PACKAGES += \
     Launcher3
